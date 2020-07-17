@@ -13,6 +13,7 @@
                 <form action="{{ action('Admin\NewsController@create') }}" method="post" enctype="multipart/form-data">
                     
                 @if(count($errors) > 0) 
+                    <h3>Errors!!</h3>
                     <ul>
                         @foreach($errors->all() as $e)
                             <li>{{ $e }}</li>
